@@ -1,0 +1,13 @@
+{% load static %}
+<header>
+        <nav id="navbar">
+            <div class="container">
+                <img style="margin-top: 1%" , src="{% static 'img/logo1.png' %}" href="index.html" width="20%">
+                <ul>
+                    <li><a class="current" href="{% url 'homePage' %}">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="{% url 'contactUs' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>

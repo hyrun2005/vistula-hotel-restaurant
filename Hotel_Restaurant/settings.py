@@ -51,6 +51,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # Ensures Django knows where to look for your static files
+]
+
 ROOT_URLCONF = 'Hotel_Restaurant.urls'
 
 TEMPLATES = [

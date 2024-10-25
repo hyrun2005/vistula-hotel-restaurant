@@ -1,10 +1,10 @@
-{%extend 'master_page.html'%}
+{%extends 'includes/master_page.html' %}
 {% block title %}
 Fake About
 {%endblock%}
 
 {% block content %}
-{%include 'header.html'%}
+{%include 'includes/header.html' %}
 
     <section id="about-info" class="bg-light py-3">
         <div class="container">
@@ -39,5 +39,5 @@ Fake About
     </section>
 
 
-{%include 'footer.html'%}
+{%include 'includes/footer.html' %}
 {%endblock%}

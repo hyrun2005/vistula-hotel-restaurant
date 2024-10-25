@@ -1,11 +1,11 @@
-{%extend 'master_page.html'%}
+{%extends 'includes/master_page.html' %}
 
 {% block title %}
 Hotel-Restaurant VISTULA | Contact Us
 {%endblock%}
 
 {% block content %}
-{%include 'header.html'%}
+{%include 'includes/header.html' %}
 
     <section id="contact-form" class="py-3">
         <div class="container">
@@ -29,5 +29,5 @@ Hotel-Restaurant VISTULA | Contact Us
         </div>
     </section>
 
-{%include 'footer.html'%}
+{%include 'includes/footer.html' %}
 {%endblock%}

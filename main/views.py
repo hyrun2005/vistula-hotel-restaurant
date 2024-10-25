@@ -7,3 +7,6 @@ from django.contrib import messages
 # Create your views here.
 def mainPage(request):
     return render(request, 'main_page.html', {})
+
+def contactPage(request):
+    return render(request, 'contact.html', {})

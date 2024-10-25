@@ -1,27 +1,25 @@
-{%extend 'master_page.html'%}
+{%extends 'includes/master_page.html' %}
 
 {% block title %}
 Hotel-Restaurant VISTULA | Welcome
 {%endblock%}
 
 {% block content %}
-{%include 'header.html'%}
+{%include 'includes/header.html' %}
 
-        <div id="showcase">
-            <div class="container">
-                <div class="showcase-content">
 
-                    <h1><span class="text-primary">Miłego</span> pobytu</h1>
-                    <p class="lead">Witam, to naprawdę trudne do naśladowania. Często jesteśmy zaślepieni prawdą
-                        łożysko
-                        i tym podobne utrudniają rozróżnienie.</p>
-                    <a class="btn" href="about.html">About Our Hotel</a>
+    <div id="showcase">
+        <div class="container">
+            <div class="showcase-content">
 
-                </div>
+                <h1><span class="text-primary">Miłego</span> pobytu</h1>
+                <p class="lead">Witam, to naprawdę trudne do naśladowania. Często jesteśmy zaślepieni prawdą
+                    łożysko
+                    i tym podobne utrudniają rozróżnienie.</p>
+                <a class="btn" href="about.html">About Our Hotel</a>
             </div>
         </div>
-    </header>
-
+    </div>
     <section id="home-info" class="bg-dark">
         <div class="info-img"></div>
         <div class="info-content">
@@ -29,11 +27,10 @@ Hotel-Restaurant VISTULA | Welcome
             <p>Sama firma jest bardzo udaną firmą. Oskarżyciele, w
                 jakich momentach wybrany ma przyjemność, czy nie możemy tutaj zostawić winy za kłopoty? Wynalazcy łatwo
                 jest odrzucić pragnienie zaspokojenia potrzeb tej mądrej rzeczy. Ucieka, nie cierpi bólu, każdy jest wybrany.</p>
-            <a href="about.html" class="btn btn-light">Read More</a>
+            <a href="#" class="btn btn-light">Read More</a>
         </div>
     </section>
 
-    <!-- Feature boxes -->
     <section id="features">
         <div class="box bg-light">
             <i class="fas fa-hotel fa-3x"></i>
@@ -54,5 +51,5 @@ Hotel-Restaurant VISTULA | Welcome
 
     <div class="clr"></div>
 
-{%include 'footer.html'%}
+{%include 'includes/footer.html' %}
 {%endblock%}
