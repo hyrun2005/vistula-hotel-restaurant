@@ -1,0 +1,43 @@
+{%extend 'master_page.html'%}
+{% block title %}
+Fake About
+{%endblock%}
+
+{% block content %}
+{%include 'header.html'%}
+
+    <section id="about-info" class="bg-light py-3">
+        <div class="container">
+            <div class="info-left">
+                <h1 class="l-heading"><span class="text-primary">About</span> Hotel BT</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus vitae qui earum sed
+                    quae, neque eum quia repellendus consequuntur! Fugiat, accusamus repudiandae porro dicta veritatis
+                    ducimus ab rem culpa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum dolorem expedita omnis suscipit
+                    repellat ipsa possimus tenetur? Tempora, aliquid.</p>
+            </div>
+            <div class="info-right">
+                <img src="../Hotel_Restaurant/static/img/photo-2.jpg" alt="Hotel BT">
+            </div>
+        </div>
+    </section>
+
+    <div class="clr"></div>
+
+    <section id="testimonials" class="py-3">
+        <div class="container">
+            <h2 class="l-heading">What Our Guests Say</h2>
+            <div class="testimonial bg-primary">
+                <img src="../Hotel_Restaurant/static/img/person-01.jpg" alt="Jennifer">
+                <p>всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер всьо било збс, ахуенна я бибизяна супер</p>
+            </div>
+            <div class="testimonial bg-primary">
+                <img src="../Hotel_Restaurant/static/img/person-228.jpg" alt="Mary">
+                <p>кайфарики мне панравилась кайфарики мне панравилась кайфарики мне панравилась кайфарики мне панравиласькайфарики мне панравилась кайфарики мне панравилась кайфарики мне панравилась кайфарики мне панравилась</p>
+            </div>
+        </div>
+    </section>
+
+
+{%include 'footer.html'%}
+{%endblock%}
