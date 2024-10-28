@@ -16,14 +16,14 @@ Login
         <form action="" method="POST">
             {% csrf_token %}
             <label for="username">Username</label>
-            <input type="text" id="phone_number" name="phone_number" placeholder="Enter your Username" required>
+            <input type="text" id="phone_number" name="email" placeholder="Enter your Username" required>
 
             <label for="password">Password</label>
             <input type="password" id="password" name="password" placeholder="Enter your Password" required>
 
             <button type="submit">Login</button>
         </form>
-         <p>Not registered? <a href="../sign_up/">Create an account</a></p>
+         <p>Not registered? <a href="{% url 'reg_user' %}">Create an account</a></p>
     </div>
 </div>
 {% endblock %}
