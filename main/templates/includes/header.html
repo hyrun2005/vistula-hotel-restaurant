@@ -7,6 +7,11 @@
                     <li><a class="current" href="{% url 'homePage' %}">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="{% url 'contactUs' %}">Contact</a></li>
+                    {% if user.is_authenticated %}
+                        <li><a href="">{{ user.name }}</a></li>
+                    {% else %}
+                        <li><a href="">Profile</a></li>
+                    {% endif %}
                 </ul>
             </div>
         </nav>

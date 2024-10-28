@@ -172,8 +172,6 @@ font-size: 60px;
     background: url('../img/buildingIndexMain.jpg') no-repeat;
     min-height: 100%;
     background-size: 100%;
-    background-position: center;
-    
 }
 
 #home-info .info-content {
@@ -287,3 +285,4 @@ font-size: 60px;
     color: #fff;
     padding: 20px;
 }
+
