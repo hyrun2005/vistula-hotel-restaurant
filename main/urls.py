@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('', views.mainPage, name='homePage'),
-    path('contactUs/', views.contactPage, name='contactUs')
+    path('contactUs/', views.contactPage, name='contactUs'),
 ]
