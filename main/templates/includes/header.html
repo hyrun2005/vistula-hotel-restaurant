@@ -2,9 +2,11 @@
 <header>
     <nav id="navbar">
         <div class="container">
-            <img style="margin-top: 1%" src="{% static 'img/logo1.png' %}" href="index.html" width="20%">
+        <a href="{% url 'homePage' %}">
+            <img style="margin-top: 1%" src="{% static 'img/logo.png' %}" width="20%">
+        </a>
             <ul>
-                <li><a class="current" href="{% url 'homePage' %}">Home</a></li>
+                <li><a  href="{% url 'restaurantHomePage' %}">Restaurant</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="{% url 'contactUs' %}">Contact</a></li>
                 {% if user.is_authenticated %}
