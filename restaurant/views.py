@@ -1,15 +1,14 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login, logout
 from django.contrib import messages
+from django.shortcuts import render
+from .models import Category
 
 
 # Create your views here.
 def mainPageRes(request):
     return render(request, 'main_page_res.html', {})
 
-
-from django.shortcuts import render
-from .models import Category, Dish
 
 def menu(request):
     # Fetch all categories along with their related dishes
